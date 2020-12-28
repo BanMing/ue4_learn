@@ -16,6 +16,15 @@ public:
 	AMyPawn();
 	UPROPERTY(VisibleAnywhere, Category = "My Pawn Components")
 		UStaticMeshComponent* MyStaticMesh;
+
+	UPROPERTY(VisibleAnywhere, Category = "My Pawn Components")
+		class USpringArmComponent* MyCameraArm;
+
+	UPROPERTY(VisibleAnywhere, Category = "My Pawn Components")
+		class UCameraComponent * MyCamera;
+
+	UPROPERTY(EditAnywhere, Category = "My Pawn Components")
+		float MoveSpeed;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -26,5 +35,14 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+private:
+	FVector Velocity;
+	void MoveForward(float value);
+	void MoveRight(float value);
+
+	FVector Roator;
+	void LookUp(float value);
+	void LookRight(float value);
 
 };
