@@ -1,11 +1,10 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
 #include "MyPawn.h"
 #include "Components/StaticMeshComponent.h"
 #include "Components/InputComponent.h"
 #include "Camera/CameraComponent.h"
-#include "GameFramework/SpringArmComponent.h" 
+#include "GameFramework/SpringArmComponent.h"
 #include "UObject/ConstructorHelpers.h"
 
 // Sets default values
@@ -45,7 +44,7 @@ AMyPawn::AMyPawn()
 	MoveSpeed = 1;
 	Velocity = FVector::ZeroVector;
 	Roator = FVector::ZeroVector;
-
+	
 	bUseControllerRotationPitch = true;
 	bUseControllerRotationYaw = true;
 }
@@ -54,40 +53,38 @@ AMyPawn::AMyPawn()
 void AMyPawn::BeginPlay()
 {
 	Super::BeginPlay();
-
 }
 
 // Called every frame
 void AMyPawn::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	AddActorLocalOffset(Velocity*DeltaTime, true);
+	AddActorLocalOffset(Velocity * DeltaTime, true);
 
 	AddControllerYawInput(Roator.Z);
 	AddControllerPitchInput(Roator.Y);
 }
 
 // Called to bind functionality to input
-void AMyPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+void AMyPawn::SetupPlayerInputComponent(UInputComponent *PlayerInputComponent)
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 	PlayerInputComponent->BindAxis(TEXT("MoveForward"), this, &AMyPawn::MoveForward);
 	PlayerInputComponent->BindAxis(TEXT("MoveRight"), this, &AMyPawn::MoveRight);
-
+	AddActorLocalOffset(FVector::ZeroVector);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AMyPawn::LookUp);
 	PlayerInputComponent->BindAxis(TEXT("LookRight"), this, &AMyPawn::LookRight);
-
 }
 
 void AMyPawn::MoveForward(float value)
 {
-	Velocity.X = FMath::Clamp(value, -1.f, 1.f)*MoveSpeed;
+	Velocity.X = FMath::Clamp(value, -1.f, 1.f) * MoveSpeed;
 }
 
 void AMyPawn::MoveRight(float value)
 {
-	Velocity.Y = FMath::Clamp(value, -1.f, 1.f)*MoveSpeed;
+	Velocity.Y = FMath::Clamp(value, -1.f, 1.f) * MoveSpeed;
 }
 
 void AMyPawn::LookUp(float value)
@@ -99,5 +96,3 @@ void AMyPawn::LookRight(float value)
 {
 	Roator.Z = value;
 }
-
-
