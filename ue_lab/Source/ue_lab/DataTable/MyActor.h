@@ -4,26 +4,23 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "Engine/DataTable.h"
-#include "CharactorDataTest.generated.h"
+#include "MyActor.generated.h"
 
 UCLASS()
-class UE_LAB_API ACharactorDataTest : public AActor
+class UE_LAB_API AMyActor : public AActor
 {
 	GENERATED_BODY()
-
-public:
+	
+public:	
 	// Sets default values for this actor's properties
-	ACharactorDataTest();
+	AMyActor();
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:
+public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-private:
-	const UDataTable* CharactorData = nullptr;
 };
