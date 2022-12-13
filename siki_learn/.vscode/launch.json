@@ -1,0 +1,128 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "siki_learn (Debug)",
+			"request": "launch",
+			"preLaunchTask": "siki_learn Win64 Debug Build",
+			"program": "C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\Binaries\\Win64\\siki_learn-Win64-Debug.exe",
+			"args": [
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learn (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "siki_learn Win64 DebugGame Build",
+			"program": "C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\Binaries\\Win64\\siki_learn-Win64-DebugGame.exe",
+			"args": [
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learn (Development)",
+			"request": "launch",
+			"preLaunchTask": "siki_learn Win64 Development Build",
+			"program": "C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\Binaries\\Win64\\siki_learn.exe",
+			"args": [
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learn (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "siki_learn Win64 Shipping Build",
+			"program": "C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\Binaries\\Win64\\siki_learn-Win64-Shipping.exe",
+			"args": [
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learn (Test)",
+			"request": "launch",
+			"preLaunchTask": "siki_learn Win64 Test Build",
+			"program": "C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\Binaries\\Win64\\siki_learn-Win64-Test.exe",
+			"args": [
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learnEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "siki_learnEditor Win64 Debug Build",
+			"program": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-Debug.exe",
+			"args": [
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject"
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learnEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "siki_learnEditor Win64 DebugGame Build",
+			"program": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Binaries\\Win64\\UE4Editor-Win64-DebugGame.exe",
+			"args": [
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject"
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "siki_learnEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "siki_learnEditor Win64 Development Build",
+			"program": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Binaries\\Win64\\UE4Editor.exe",
+			"args": [
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject"
+			],
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26",
+			"stopAtEntry": false,
+			"externalConsole": true,
+			"type": "cppvsdbg",
+			"visualizerFile": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Extras\\VisualStudioDebugging\\UE4.natvis"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "clr",
+			"request": "launch",
+			"program": "C:\\Work\\Perforce\\streamsDepot\\release-4.26\\Engine\\Binaries\\DotNET\\UnrealBuildTool.exe",
+			"console": "externalTerminal",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+		}
+	]
+}

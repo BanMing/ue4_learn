@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "name": "siki_learnEditor Editor Win64 Development (siki_learn)",
+            "intelliSenseMode": "msvc-x64",
+            "compileCommands": "C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\.vscode\\compileCommands_siki_learn.json"
+        }
+    ],
+    "version": 4
+}

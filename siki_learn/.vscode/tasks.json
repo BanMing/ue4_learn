@@ -1,0 +1,1409 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "siki_learn Win32 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win32 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win32 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win32 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win32 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win32 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win32 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win32",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win64 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Win64 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Win64 Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Win64",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn HoloLens Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn HoloLens DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn HoloLens Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn HoloLens Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn HoloLens Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn HoloLens Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"HoloLens",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Shipping Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Shipping",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Test Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learn Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learn Mac Test Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learn",
+				"Mac",
+				"Test",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learnEditor Win64 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learnEditor Win64 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learnEditor Win64 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Win64 Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learnEditor",
+				"Win64",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learnEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"Debug",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learnEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"DebugGame",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Build.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"siki_learnEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		},
+		{
+			"label": "siki_learnEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+			"args": [
+				"siki_learnEditor",
+				"Mac",
+				"Development",
+				"C:\\Learn\\BanMing\\ue4_learn\\siki_learn\\siki_learn.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "C:\\Work\\Perforce\\streamsDepot\\release-4.26"
+			}
+		}
+	]
+}
