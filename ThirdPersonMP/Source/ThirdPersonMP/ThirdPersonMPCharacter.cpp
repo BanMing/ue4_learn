@@ -9,6 +9,7 @@
 #include "GameFramework/CharacterMovementComponent.h"
 #include "GameFramework/Controller.h"
 #include "GameFramework/SpringArmComponent.h"
+#include "Kismet/GameplayStatics.h"
 #include "Net/UnrealNetwork.h"
 #include "ThirdPersonMPProjectile.h"
 
@@ -224,4 +225,29 @@ void AThirdPersonMPCharacter::HandleFire_Implementation()
 	spawnParameters.Instigator = GetInstigator();
 	spawnParameters.Owner = this;
 	AThirdPersonMPProjectile* spawnedProjectile = GetWorld()->SpawnActor<AThirdPersonMPProjectile>(spawnLoaction, spawnRotaction, spawnParameters);
+}
+
+void AThirdPersonMPCharacter::OpenLobby()
+{
+	UWorld* world = GetWorld();
+	if (world)
+	{
+		// /Game/ = Content floder
+		// ?listen, set the level is a listen server
+		world->ServerTravel("/Game/ThirdPerson/Maps/Lobby?listen");
+	}
+}
+
+void AThirdPersonMPCharacter::CallOpenLevel(const FString& IPAddress)
+{
+	UGameplayStatics::OpenLevel(this, IPAddress);
+}
+
+void AThirdPersonMPCharacter::CallClientTravel(const FString& IPAddress)
+{
+	APlayerController* playerController = GetGameInstance()->GetFirstLocalPlayerController();
+	if (playerController)
+	{
+		playerController->ClientTravel(IPAddress, ETravelType::TRAVEL_Absolute);
+	}
 }

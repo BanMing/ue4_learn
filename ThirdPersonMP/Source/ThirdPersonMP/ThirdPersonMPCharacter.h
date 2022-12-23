@@ -136,4 +136,15 @@ protected:
 
 	// A timer handle used for providing the fire the rate delay in-between spawns
 	FTimerHandle FiringTimer;
+
+public:
+	// udmey course
+	UFUNCTION(BlueprintCallable)
+	void OpenLobby();
+
+	UFUNCTION(BlueprintCallable)
+	void CallOpenLevel(const FString& IPAddress);
+
+	UFUNCTION(BlueprintCallable)
+	void CallClientTravel(const FString& IPAddress);
 };
